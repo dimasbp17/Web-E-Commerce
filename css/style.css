@@ -1,0 +1,95 @@
+:root {
+    --navbar: #b3526a;
+    --card: #c9516f;
+    --button: #793043;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: var(--navbar);
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 25px;
+    font-size: small !important;
+}
+
+.nav-link:hover {
+    color: black !important;
+}
+
+.carousel {
+    margin-top: 40px;
+    background-size: cover;
+    background-position: center;
+}
+
+#header {
+    background: url(../images/banner-img-1.jpg) top/cover no-repeat;
+}
+
+.card {
+    cursor: pointer;
+    /* width: 8rem; */
+    border: 2px solid black;
+    transition: 0.3s;
+}
+
+.card-body {
+    background: var(--navbar);
+    height: 100px;
+}
+
+.card-text {
+    color: white;
+    font-size: small;
+}
+
+.button {
+    background: var(--button) !important;
+    color: white !important;
+    font-size: small !important;
+    padding: 20px !important;
+}
+.btn:hover {
+    background: purple !important;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.tentang {
+    background: var(--navbar);
+    margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+    .nav-link:hover {
+        color: black;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        display: flex;
+    }
+    .card-text {
+        font-size: 10px;
+    }
+}
